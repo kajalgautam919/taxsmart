@@ -1,0 +1,135 @@
+.footer {
+  background-color: slategray; /* Dark background for contrast */
+  color: #ffffff;
+  padding: 48px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-container {
+  max-width: 400px;
+}
+
+.about-footer {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Taviraj";
+  margin-top: 10px;
+}
+
+.about-tax {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footer-services {
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+.heading-service {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Taviraj";
+  margin-top: 10px;
+}
+
+.footer-services p {
+  font-size: 18px;
+  color: #ffffff;
+  /* margin: 5px 0; */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-services p:hover {
+  color: #1da1f2; /* Twitter blue as hover effect */
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media .social-icon {
+  display: flex;
+}
+
+.social-media p {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Taviraj";
+  margin-top: 10px;
+}
+
+.social-media a {
+  font-size: 24px;
+  margin: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.Contact-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.Contact-footer a,
+.Contact-footer div {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.Contact-footer a:hover,
+.Contact-footer div:hover {
+  color: #1da1f2;
+}
+
+.Contact-footer svg {
+  margin-right: 8px;
+  font-size: 18px;
+}
+.Contact-footer p {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Taviraj";
+  margin-top: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container,
+  .footer-services,
+  .social-media,
+  .Contact-footer {
+    margin-bottom: 20px;
+  }
+
+  .social-media a {
+    font-size: 20px;
+  }
+}

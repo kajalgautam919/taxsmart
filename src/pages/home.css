@@ -1,0 +1,395 @@
+/* Adjusting container to be closer to navbar */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align text closer to navbar */
+  text-align: center;
+  color: white;
+  font-family: "Taviraj", serif;
+  padding-top: 80px; /* Adjust this value based on navbar height */
+}
+
+/* Background image */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/pexels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+/* Heading */
+h3 {
+  font-weight: 500;
+  margin-top: 90px; /* Remove extra margin */
+  padding: 10px 0;
+  font-family: "Taviraj";
+  font-size: 5rem;
+}
+
+/* Paragraph */
+.paragraph {
+  font-family: "Taviraj";
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-top: -40px;
+  padding: 0 20px;
+}
+/* Centered Transparent Button */
+.cta-button {
+  width: 159px;
+  height: 70px;
+  background-color: transparent; /* Initially transparent */
+  color: white; /* White text */
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid white; /* White border */
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth effect */
+  border-color: lightskyblue;
+  margin-top: -10px;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+  background-color: lightskyblue; /* Background changes on hover */
+  color: rgb(255, 255, 255); /* Text changes for contrast */
+  border-color: lightskyblue; /* Border changes to match */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 70px; /* Adjust for smaller screens */
+  }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+  .paragraph {
+    font-size: 3rem;
+    padding: 0 15px;
+  }
+  .cta-button {
+    width: 140px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  .about-btn-home {
+    width: 140px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  .about-us-home {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+}
+h4 {
+  margin-left: 1px;
+  display: block;
+  text-underline-offset: 4px;
+  font-family: "Taviraj";
+  font-size: 49px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: -1.96px;
+  color: #25372a;
+  text-decoration: underline;
+  margin-bottom: 16px;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* Container to Align Text and Image Side by Side */
+.about-us-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 80px 50px;
+  min-height: 90vh;
+  margin-top: -90px;
+  background-color: rgb(208, 229, 229);
+}
+
+/* Text Content Styling */
+.about-us-home .text-content {
+  flex: 1;
+  max-width: 700px;
+  margin-top: -180px;
+}
+
+/* About Us Heading */
+.us-about {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #25372a;
+  font-family: "Taviraj", serif;
+}
+
+/* Paragraphs */
+.span-para {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #7b7e7c;
+}
+
+/* Image Container */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  max-width: 50%;
+  margin-top: -60;
+}
+
+/* About Us Image */
+.about-image {
+  width: 654px;
+  height: 654px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* More Details Button */
+.about-btn-home {
+  width: 162px;
+  height: 70px;
+  background-color: transparent;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  color: slategray;
+  border-color: slategray;
+}
+
+/* Hover Effect */
+.about-btn-home:hover {
+  background-color: #a6ada8;
+
+  border-color: slategray;
+}
+.hr-line {
+  width: 100%; /* Adjust width as needed */
+  border: none;
+  height: 2px;
+  background-color: #ccc; /* Light gray */
+  margin: 20px auto; /* Space around the line */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-image {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us-home {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-image-container {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .about-image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-home {
+    padding: 50px 20px;
+  }
+
+  .us-about {
+    font-size: 2.5rem;
+  }
+
+  .span-para {
+    font-size: 1rem;
+  }
+
+  .about-btn-home {
+    width: 140px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  .slider-container {
+    width: 90%;
+  }
+}
+/* Our-services css */
+.our-services {
+  position: relative;
+  width: 100%;
+  height: 98vh;
+  background-image: url("/public/income-tax.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.our-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.service-container {
+  position: relative;
+  z-index: 2;
+}
+
+h5 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: -200px;
+  font-family: "Taviraj";
+  color: #ffffff;
+}
+
+h6 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Taviraj";
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+/* Slider Section */
+.slider-section {
+  width: 90%;
+  text-align: center;
+}
+
+/* Individual Card */
+.card {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-left: 50px; /* Adds space around the card */
+  display: flex;
+  gap: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Title Inside Card */
+.services-title-card {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Description Inside Card */
+.services-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Slick Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 20px;
+  color: white;
+  z-index: 10;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: lightskyblue;
+}
+
+/* Slick Dots */
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: lightskyblue;
+}
+.slick-slide {
+  padding: 20px; /* Adjust the padding to increase spacing */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-section {
+    width: 95%;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px 5px; /* Adjust space between cards for small screens */
+  }
+
+  .services-title-card {
+    font-size: 1.3rem;
+  }
+
+  .services-description {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,58 @@
+.contain-about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align text closer to navbar */
+  text-align: center;
+  color: white;
+  font-family: "Taviraj", serif;
+  padding-top: 80px; /* Adjust this value based on navbar height */
+}
+
+.contain-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/block-tax.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+.second-about {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-underline-offset: 4px;
+  font-family: "Taviraj";
+  font-size: 65px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: -1.96px;
+  color: rgb(37, 55, 42);
+  padding-top: 8px;
+  width: 100%;
+  margin-left: 38rem;
+}
+.hmv {
+  margin-left: 6vh;
+  font-family: "Taviraj";
+  margin-right: 6vh;
+  margin-bottom: 40px;
+}
+.oh {
+  font-size: 65px;
+  font-family: "Taviraj";
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.about-text {
+  color: slategray;
+  font-size: 20px;
+}
